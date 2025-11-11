@@ -1,0 +1,49 @@
+LoadWave/J/M/U={1,0,1,0}/D/A=wave/K=0 "Macintosh HD:Users:jamunoz:OneDrive - University of Texas at El Paso:FeTi_BO:FeV_hack:B2_2.90_300K_G_X_3000_500_heatmap.csv"
+LoadWave/J/M/U={1,0,1,0}/D/A=wave/K=0 "Macintosh HD:Users:jamunoz:OneDrive - University of Texas at El Paso:FeTi_BO:FeV_hack:B2_2.90_300K_X_M_3000_500_heatmap.csv"
+LoadWave/J/M/U={1,0,1,0}/D/A=wave/K=0 "Macintosh HD:Users:jamunoz:OneDrive - University of Texas at El Paso:FeTi_BO:FeV_hack:B2_2.90_300K_M_G_3000_500_heatmap.csv"
+LoadWave/J/M/U={1,0,1,0}/D/A=wave/K=0 "Macintosh HD:Users:jamunoz:OneDrive - University of Texas at El Paso:FeTi_BO:FeV_hack:B2_2.90_300K_G_R_3000_500_heatmap.csv"
+LoadWave/J/M/U={1,0,1,0}/D/A=wave/K=0 "Macintosh HD:Users:jamunoz:OneDrive - University of Texas at El Paso:FeTi_BO:FeV_hack:B2_2.90_300K_R_M_3000_500_heatmap.csv"
+Display;DelayUpdate
+AppendImage wave40
+ModifyGraph margin=-1,width=100,height=610
+ModifyGraph userticks(left)={index_int,index_txt}
+Display;DelayUpdate
+AppendImage wave41
+ModifyGraph margin=-1,width=100,height=610
+ModifyGraph userticks(left)={index_int,index_txt}
+Display;DelayUpdate
+AppendImage wave42
+ModifyGraph margin=-1,width=140,height=610
+ModifyGraph userticks(left)={index_int,index_txt}
+Display;DelayUpdate
+AppendImage wave43
+ModifyGraph margin=-1,width=170,height=610
+ModifyGraph userticks(left)={index_int,index_txt}
+Display;DelayUpdate
+AppendImage wave44
+ModifyGraph margin=-1,width=100,height=610
+ModifyGraph userticks(left)={index_int,index_txt}
+
+
+
+####
+
+Window Layout_290A_900K() : Layout
+	PauseUpdate; Silent 1		// building window...
+	NewLayout/W=(5,45,1111,806)
+	if (IgorVersion() >= 7.00)
+		LayoutPageAction size=(864,720),margins=(18,18,18,18)
+	endif
+	ModifyLayout mag=1
+	AppendLayoutObject/F=1/T=0/R=(500,34,675,646) Graph Graph5
+	AppendLayoutObject/F=1/T=0/R=(254,34,356,646) Graph Graph6
+	AppendLayoutObject/F=1/T=0/R=(357,34,499,646) Graph Graph7
+	AppendLayoutObject/F=1/T=0/R=(66,34,253,646) Graph Graph8
+	AppendLayoutObject/F=1/T=0/R=(676,34,778,646) Graph Graph9
+	TextBox/C/N=text0/F=0/A=LB/X=14.25/Y=3.95 "\\Z24 \\$WMTEX$ \\Gamma \\$/WMTEX$"
+	TextBox/C/N=text1/F=0/A=LB/X=27.42/Y=4.09 "\\Z24X"
+	TextBox/C/N=text2/F=0/A=LB/X=39.61/Y=4.24 "\\Z24M"
+	TextBox/C/N=text3/F=0/A=LB/X=56.64/Y=4.82 "\\Z24\\$WMTEX$ \\Gamma \\$/WMTEX$"
+	TextBox/C/N=text4/F=0/A=LB/X=78.38/Y=4.24 "\\Z24R"
+	TextBox/C/N=text5/F=0/A=LB/X=90.46/Y=4.24 "\\Z24M"
+EndMacro
